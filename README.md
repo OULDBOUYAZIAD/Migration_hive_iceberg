@@ -7,7 +7,7 @@ This repository contains a step-by-step guide for migrating from a traditional H
 
 
 <p align="center">
-    <img src="img/archi.png" alt="Logo" width="700" height="800" >
+    <img src="img/archi.png" alt="Logo" width="600" height="700" >
 </p>
 
 1.  Transferring files from HDFS to S3.
@@ -23,9 +23,9 @@ By following this guide, you will be able to leverage the benefits of Iceberg,
 
 - [Introduction](#Introduction)
 - [Prerequisites](#Prerequisites)
-- [Transferring_Files_from_HDFS_to_S3](#Step 1: Transferring Files from HDFS to S3)
-- [Converting_Hive_Tables_to_Iceberg_Tables](#Step 2: Converting Hive Tables to Iceberg Tables)
-- [Step 3: Migrating the Catalog from Hive Metastore to Nessie](#Step 3: Migrating the Catalog from Hive Metastore to Nessie)
+- [Transferring_Files_from_HDFS_to_S3](#Transferring_Files_from_HDFS_to_S3)
+- [Converting_Hive_Tables_to_Iceberg_Tables](#Converting_Hive_Tables_to_Iceberg_Tables)
+- [Migrating_the_Catalog_from_Hive_Metastore_to_Nessie](#Migrating_the_Catalog_from_Hive_Metastore_to_Nessie)
 - [Conclusion](#Conclusion)
 
 ## Prerequisites 
@@ -35,7 +35,7 @@ By following this guide, you will be able to leverage the benefits of Iceberg,
 - Notebook spark 
 - Nessie instance
 
-## Step 1: Transferring Files from HDFS to S3 
+## Step 1: Transferring_Files_from_HDFS_to_S3
 
 1. Copy files from HDFS to S3: 
     
@@ -53,6 +53,6 @@ Once the files are copied to S3, update the location of your Hive tables to poin
    ALTER TABLE your_table SET LOCATION 's3a://your-bucket/path/';
 ```
 
-## Step 2: Converting Hive Tables to Iceberg Tables
+## Step 2: Converting_Hive_Tables_to_Iceberg_Tables
 
 
