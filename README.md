@@ -7,7 +7,7 @@ This repository contains a step-by-step guide for migrating from a traditional H
 
 
 <p align="center">
-    <img src="img/archi.png" alt="Logo" width="900" height="1000" >
+    <img src="img/archi.png" alt="Logo" width="700" height="800" >
 </p>
 
 1.  Transferring files from HDFS to S3.
